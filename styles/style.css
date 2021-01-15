@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+/*------ Wild Card ------*/
+
+* {
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+/*------ Generic ------*/
+
+body {
+    font-family: 'Cormorant Garamond', sans-serif;
+    background-color: rgb(219, 191, 152);
+    color: rgb(12, 10, 4);
+    margin: 5rem;
+
+}
+
+/*------ Headings ------*/
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+h3, h4 {
+    padding-bottom: 0.5rem;
+}
+
+/*------ List ------*/
+
+ul {
+    padding-left: 2rem;
+}
+
+/*------ Footer ------*/
+
+#footer {
+    background-color: rgb(117, 151, 167);
+    padding: 1rem;
+    margin-top: 2rem;
+}
