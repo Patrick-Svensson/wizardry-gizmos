@@ -30,6 +30,9 @@ p {
 
 /*------ Trailer ------*/
 
+.video { 
+}
+
 .trailer {
     width: 50%;
     margin-bottom: 1rem;
@@ -38,7 +41,15 @@ p {
 .trailer-text {
     text-align: left;
     font-size: 1.5rem;
+    font-weight: 600;
     margin: 3rem 0 0.5rem 0;
+}
+
+/*------ Author ------*/
+
+.author {
+    float: right;
+    width: 30%;
 }
 
 /*------ Headings ------*/
@@ -64,12 +75,12 @@ ul {
 
 /*------ Footer ------*/
 
-#footer {
+.footer {
     background-color: rgb(141, 103, 109);
     padding: 1rem;
     margin-top: 4rem;
 }
 
-#footer a {
+.footer a {
     color: rgb(250, 242, 209);
 }
