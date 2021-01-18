@@ -47,7 +47,16 @@ ul {
 /*------ Footer ------*/
 
 #footer {
-    background-color: rgb(117, 151, 167);
+    background-color: rgb(134, 166, 204);
     padding: 1rem;
     margin-top: 2rem;
+}
+
+#footer a {
+    color: rgb(254, 236, 160);
+    text-decoration: none;
+}
+
+#footer a:visited {
+    color: rgb(86, 33, 25) ;
 }
