@@ -18,12 +18,27 @@ body {
 
 }
 
+p {
+    font-size: 1.2rem;
+}
+
+/*------ Image ------*/
+
 #hogwarts-image {
     margin: 2rem 0 1rem 0;
 }
 
-p {
-    font-size: 1.2rem;
+/*------ Trailer ------*/
+
+.trailer {
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.trailer-text {
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 3rem 0 0.5rem 0;
 }
 
 /*------ Headings ------*/
@@ -52,7 +67,7 @@ ul {
 #footer {
     background-color: rgb(141, 103, 109);
     padding: 1rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 #footer a {
