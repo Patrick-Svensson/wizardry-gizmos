@@ -42,13 +42,6 @@ p {
     margin: 3rem 0 0.5rem 0;
 }
 
-/*------ Author ------*/
-
-.author {
-    float: right;
-    width: 30%;
-}
-
 /*------ Headings ------*/
 
 h1 {
@@ -80,4 +73,14 @@ ul {
 
 .footer a {
     color: rgb(250, 242, 209);
+}
+
+/*------ Media Queries ------*/
+
+@media screen and (min-width: 992px) {
+
+    .author {
+        float: right;
+        width: 30%;
+    }
 }
