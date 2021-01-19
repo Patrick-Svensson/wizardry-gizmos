@@ -12,9 +12,9 @@
 
 body {
     font-family: 'Cormorant Garamond', sans-serif;
-    background-color: rgb(219, 191, 152);
+    background-color: rgb(250, 242, 209);
     color: rgb(12, 10, 4);
-    margin: 5rem;
+    margin: 1rem;
 
 }
 
@@ -25,13 +25,21 @@ p {
 /*------ Image ------*/
 
 #hogwarts-image {
-    margin: 2rem 0 1rem 0;
+    width: 100%;
+    margin-bottom: 2rem;
+    
+}
+
+/*------ Author ------*/
+
+.author {
+    font-style: italic;
 }
 
 /*------ Trailer ------*/
 
 .trailer {
-    width: 50%;
+    width: 100%;
     margin-bottom: 1rem;
 }
 
@@ -71,8 +79,23 @@ ul {
     margin-top: 4rem;
 }
 
-.footer a {
+/*------ Links ------*/
+
+.main-link {
+    color: rgb(12, 10, 4);
+}
+
+.main-link:hover {
+    color: rgb(22, 103, 134);
+}
+
+.links {
     color: rgb(250, 242, 209);
+    text-decoration: none;
+}
+
+.links:hover {
+    color:rgb(183, 241, 241)
 }
 
 /*------ Media Queries ------*/
@@ -82,5 +105,16 @@ ul {
     .author {
         float: right;
         width: 30%;
+        border: 1px solid rgb(12, 10, 4);
+        padding: 0 2rem 3rem 2rem;
+        margin-top: 2.3rem;
+    }
+
+    .trailer {
+        width: 50%;
+    }
+    
+    body {
+        margin: 3rem;
     }
 }
