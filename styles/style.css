@@ -83,10 +83,12 @@ ul {
 
 .main-link {
     color: rgb(12, 10, 4);
+    text-decoration: none;
 }
 
 .main-link:hover {
     color: rgb(22, 103, 134);
+    border-bottom: 1px solid rgb(22, 103, 134);
 }
 
 .links {
@@ -95,7 +97,8 @@ ul {
 }
 
 .links:hover {
-    color:rgb(183, 241, 241)
+    color:rgb(183, 241, 241);
+    border-bottom: 1px solid rgb(183, 241, 241);
 }
 
 /*------ Media Queries ------*/
