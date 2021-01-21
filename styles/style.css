@@ -24,15 +24,13 @@ p {
 
 /*------ Image ------*/
 
-#hogwarts-image {
+img {
     width: 100%;
-    margin-bottom: 2rem;
-    
 }
 
 /*------ Author ------*/
 
-.author {
+aside {
     font-style: italic;
 }
 
@@ -73,7 +71,7 @@ ul {
 
 /*------ Footer ------*/
 
-.footer {
+footer {
     background-color: rgb(141, 103, 109);
     padding: 1rem;
     margin-top: 4rem;
@@ -81,31 +79,40 @@ ul {
 
 /*------ Links ------*/
 
-.main-link {
+a[href*="main"] {
     color: rgb(12, 10, 4);
     text-decoration: none;
+    margin-top: 2rem;
 }
 
-.main-link:hover {
+a[href*="main"]:hover {
     color: rgb(22, 103, 134);
     border-bottom: 1px solid rgb(22, 103, 134);
 }
 
-.links {
+footer a {
     color: rgb(250, 242, 209);
     text-decoration: none;
 }
 
-.links:hover {
+footer a:hover {
     color:rgb(183, 241, 241);
     border-bottom: 1px solid rgb(183, 241, 241);
+}
+
+a[href*="pixabay"] {
+    display: block;
 }
 
 /*------ Media Queries ------*/
 
 @media screen and (min-width: 992px) {
 
-    .author {
+    body {
+        margin: 3rem;
+    }
+
+    aside {
         float: right;
         width: 30%;
         border: 1px solid rgb(12, 10, 4);
@@ -132,7 +139,14 @@ ul {
         width: 50%;
     }
     
-    body {
-        margin: 3rem;
+    a[href*="pixabay"] {
+        display: inline;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
+
+    a[href*="wikiwand"] {
+        margin-left: 3rem;
+    }
+
 }
