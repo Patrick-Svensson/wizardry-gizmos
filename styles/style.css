@@ -110,7 +110,22 @@ ul {
         width: 30%;
         border: 1px solid rgb(12, 10, 4);
         padding: 0 2rem 3rem 2rem;
-        margin-top: 2.3rem;
+        margin-top: 5.5rem;
+    }
+    
+    .group:before,
+    .group:after {
+        content: "";
+        display: table;
+    }
+
+    .group:after {
+        clear: both;
+    }
+
+    .group {
+        clear: both;
+        *zoom: 1;
     }
 
     .trailer {
