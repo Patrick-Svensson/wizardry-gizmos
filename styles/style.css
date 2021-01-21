@@ -28,7 +28,7 @@ img {
     width: 100%;
 }
 
-/*------ Author ------*/
+/*------ Author Info ------*/
 
 aside {
     font-style: italic;
@@ -80,6 +80,7 @@ footer {
 /*------ Links ------*/
 
 a[href*="main"] {
+    display: inline-block;
     color: rgb(12, 10, 4);
     text-decoration: none;
     margin-top: 2rem;
