@@ -9,13 +9,20 @@
 }
 
 /*------ Generic ------*/
+:root {
+    --unicornIvory: rgb(255, 248, 225);
+    --dementorBlack: rgb(12, 10, 4);
+    --pixieBlue: rgb(22, 103, 134);
+    --flyingFordAngliaBlue: rgb(183, 241, 241);
+    --sortingHatBrown: rgb(141, 112, 103);
+}
 
 body {
     font-family: 'Cormorant Garamond', sans-serif;
-    background-color: rgb(255, 247, 220);
-    color: rgb(12, 10, 4);
+    background-color: var(--unicornIvory);
+    color: var(--dementorBlack);
     margin: 1rem;
-    border-top: .1rem solid rgb(12, 10, 4);
+    border-top: .1rem solid var(--dementorBlack);
 }
 
 h2 {
@@ -48,7 +55,7 @@ h1 {
 
 img {
     width: 100%;
-    border-top: .1rem solid rgb(12, 10, 4);
+    border-top: .1rem solid var(--dementorBlack);
     padding-top: 2rem;
     margin-top: 1rem;
 }
@@ -83,7 +90,7 @@ ul {
 /*------ Footer ------*/
 
 footer {
-    background-color: rgb(141, 103, 109);
+    background-color: var(--sortingHatBrown);
     padding: 1rem;
     margin-top: 4rem;
 }
@@ -92,24 +99,24 @@ footer {
 
 a[href*="main"] {
     display: inline-block;
-    color: rgb(12, 10, 4);
+    color: var(--dementorBlack);
     text-decoration: none;
     margin-top: 2rem;
 }
 
 a[href*="main"]:hover {
-    color: rgb(22, 103, 134);
-    border-bottom: .1rem solid rgb(22, 103, 134);
+    color: var(--pixieBlue);
+    border-bottom: .1rem solid var(--pixieBlue);
 }
 
 footer a {
-    color: rgb(250, 242, 209);
+    color: var(--unicornIvory);
     text-decoration: none;
 }
 
 footer a:hover {
-    color:rgb(183, 241, 241);
-    border-bottom: .1rem solid rgb(183, 241, 241);
+    color: var(--flyingFordAngliaBlue);
+    border-bottom: .1rem solid var(--flyingFordAngliaBlue);
 }
 
 a[href*="pixabay"] {
@@ -139,7 +146,7 @@ a[href*="pixabay"] {
     aside {
         float: right;
         width: 30%;
-        border: .1rem solid rgb(12, 10, 4);
+        border: .1rem solid var(--dementorBlack);
         padding: 0 2rem 3rem 2rem;
         margin-top: 5.5rem;
     }
