@@ -9,6 +9,7 @@
 }
 
 /*------ Generic ------*/
+
 :root {
     --unicornIvory: rgb(255, 248, 225);
     --dementorBlack: rgb(12, 10, 4);
@@ -79,7 +80,6 @@ aside {
     font-weight: 700;
     margin: 3rem 0 0.5rem 0;
 }
-
 
 /*------ List ------*/
 
