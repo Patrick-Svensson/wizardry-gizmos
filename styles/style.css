@@ -45,11 +45,13 @@ p {
     max-width: 19rem;
     margin: auto;
     padding-top: 1rem;
+    font-size: .6rem;
 }
 
-h1 {
-    font-size: 2rem;
+.header span {
+    display: block;
     text-align: center;
+    font-size: 2rem;
 }
 
 /*------ Image ------*/
@@ -133,13 +135,11 @@ a[href*="pixabay"] {
 
     .header {
         max-width: 38rem;
+        font-size: 1rem;
+
     }
 
-    .header p {
-        font-size: 2rem;
-    }
-
-    h1 {
+    .header span {
         font-size: 4rem;
     }
 
