@@ -125,13 +125,17 @@ a[href*="pixabay"] {
     display: block;
 }
 
-/*------ Media Queries ------*/
+/*---------- Media Queries ----------*/
 
 @media screen and (min-width: 992px) {
+
+    /*------ Generic ------*/
 
     body {
         margin: 3rem;
     }
+
+    /*------ Header ------*/
 
     .header {
         max-width: 38rem;
@@ -143,6 +147,8 @@ a[href*="pixabay"] {
         font-size: 4rem;
     }
 
+    /*------ Aside ------*/
+
     aside {
         float: right;
         width: 30%;
@@ -151,6 +157,8 @@ a[href*="pixabay"] {
         margin-top: 5.5rem;
     }
     
+     /*-- Clearfix for Aside Float Element --*/
+
     .group:before,
     .group:after {
         content: "";
@@ -166,10 +174,14 @@ a[href*="pixabay"] {
         *zoom: 1;
     }
 
+    /*------ Trailer ------*/
+
     .trailer {
         width: 50%;
     }
     
+    /*------ Links ------*/
+
     a[href*="pixabay"] {
         display: inline;
         margin-left: 2rem;
