@@ -3,31 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harry Potter's Magical Objets</title>
+    <link rel="icon"  type="image/png" href="images/favicon-logo.png" sizes="60x60" aria-hidden="true">
+    <title>Magical Objects</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" 
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css" type="text/css">
 </head>
 <body>
 
-    <!-------- Header -------->
-    <header class="header">
+    <!-- ***** Navigation ***** -->
+    <header>
+        <nav class="navbar">
+            <a class="navbar__logo" href="#">
+                <svg width="77" height="68">
+                    <use xlink:href="images/deathly-hallows-logo.svg#deathly-hallows"></use>
+                </svg>
+            </a>
+            <button class="navbar__toggler">
+                <span><i class="fas fa-broom"></i></span>
+                <span><i class="fas fa-broom"></i></span>
+                <span><i class="fas fa-broom"></i></span>
+            </button>
+        </nav>
+    </header>
+    <!-- ***** /.Navigation ***** -->
+
+    <!-- ***** Heading ***** -->
+    <section class="header">
         <h1><em>Harry Potter's</em>
             <span>Magical Objects</span>
         </h1>
-    </header>
-    <!------- /.Header ------->
+    </section>
+    <hr>
+    <!-- ***** /.Heading ***** -->
 
-    <!-------- Image -------->
+    <!-- ***** Image ***** -->
     <section>
         <figure>
             <img src="images/hogwarts.jpg" alt=" Image of Hogwarts School of Wizardry and Wichcraft with a flying dragon.">
             <figcaption>Fig.1 - Hogwarts School of Witchcraft and Wizardry.</figcaption>
         </figure>
     </section>
-    <!-------- /.Image -------->
+    <!-- ***** /.Image ***** -->
 
-    <a href="#main-content">Skip to main content.</a>
-
-    <!------ Introduction ------>
+    <!-- ***** Introduction ***** -->
     <section>
         <article>
             <header>
@@ -50,9 +69,9 @@
             </p>
         </article>
     </section>
-    <!------ /.Introduction ------>
+    <!-- ***** /.Introduction ***** -->
 
-    <!------ Author Info ------>
+    <!-- ***** Author Info ***** -->
     <section class="group">
         <aside>
             <h2>J. K. Rowling</h2>
@@ -63,9 +82,9 @@
                 becoming the best-selling book series in history.
             </p>
         </aside>
-    <!------ Author Info ------>
+    <!-- ***** /.Author Info ***** -->
 
-    <!------ Trailer ------>
+    <!-- ***** Trailer ***** -->
         <figure>
             <figcaption class="trailer-text">Harry Potter and The Philosopher's Stone Trailer</figcaption>
             <video  class="trailer" controls poster="images/trailer-image.png">
@@ -79,9 +98,9 @@
             </video>
         </figure>
     </section>
-    <!------ /.Trailer ------>
+    <!-- ***** /.Trailer ***** -->
 
-    <!------ Main Content ------>
+    <!-- ***** Main Content ***** -->
     <main id="main-content">
         <article>
             <header>
@@ -150,7 +169,7 @@
             </ul>
         </article>
     </main>
-    <!------ /.Main Content ------>
+     <!-- ***** /.Main Content ***** -->
 
     <footer>       
             <h4>References:</h4>

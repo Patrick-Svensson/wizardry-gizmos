@@ -15,15 +15,15 @@
     --dementorBlack: rgb(12, 10, 4);
     --pixieBlue: rgb(22, 103, 134);
     --flyingFordAngliaBlue: rgb(183, 241, 241);
-    --sortingHatBrown: rgb(141, 112, 103);
+    --sortingHatBrown: rgb(65, 36, 27);
 }
 
 body {
+    width: 95%;
     font-family: 'Cormorant Garamond', sans-serif;
     background-color: var(--unicornIvory);
     color: var(--dementorBlack);
-    margin: 1rem;
-    border-top: .1rem solid var(--dementorBlack);
+    margin: 2rem auto 2rem auto;
 }
 
 h2 {
@@ -38,6 +38,43 @@ p {
     font-size: 1.2rem;
 }
 
+hr {
+    height: 1.2px;
+    background-color: var(--dementorBlack);
+    opacity: 40%;
+}
+
+/*------ Navigation ------*/
+
+.navbar-logo {
+    margin-top: .5rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(65, 36, 27, .5);
+    background-image: linear-gradient(var(--sortingHatBrown), var(--unicornIvory));
+    border-radius: .3rem;
+
+}
+
+.navbar__toggler {
+    width: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin-right: .5rem;
+}
+
+.fa-broom {
+    font-size: 1rem;
+    color: var(--dementorBlack);
+}
+
 /*------ Header ------*/
 
 .header {
@@ -46,6 +83,8 @@ p {
     margin: auto;
     padding-top: 1rem;
     font-size: .6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .header span {
@@ -58,9 +97,7 @@ p {
 
 img {
     width: 100%;
-    border-top: .1rem solid var(--dementorBlack);
-    padding-top: 2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 /*------ Author Info ------*/
@@ -92,8 +129,10 @@ ul {
 /*------ Footer ------*/
 
 footer {
-    background-color: var(--sortingHatBrown);
-    padding: 1rem;
+    background-color:  rgba(65, 36, 27, .5);
+    background-image: linear-gradient(var(--unicornIvory), var(--sortingHatBrown));
+    border-radius: .3rem;
+    padding: 2rem;
     margin-top: 4rem;
 }
 
@@ -132,7 +171,14 @@ a[href*="pixabay"] {
     /*------ Generic ------*/
 
     body {
-        margin: 3rem;
+        width: 85%;
+        margin: 3rem auto 3rem auto;
+    }
+
+    /*------ Image ------*/
+
+    img {
+        margin-top: 2rem;
     }
 
     /*------ Header ------*/
@@ -157,7 +203,7 @@ a[href*="pixabay"] {
         margin-top: 5.5rem;
     }
     
-     /*-- Clearfix for Aside Float Element --*/
+        /*-- Clearfix for Aside Float Element --*/
 
     .group:before,
     .group:after {
@@ -190,6 +236,5 @@ a[href*="pixabay"] {
 
     a[href*="wikiwand"] {
         margin-left: 3rem;
-    }
-
+    }    
 }
