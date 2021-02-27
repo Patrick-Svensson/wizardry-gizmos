@@ -2,10 +2,13 @@
 
 /*------ Wild Card ------*/
 
-* {
+*,
+*::before,
+*::after {
     margin:0;
     padding:0;
     border:0;
+    box-sizing: inherit;
 }
 
 /*------ Generic ------*/
@@ -19,11 +22,20 @@
 }
 
 body {
-    width: 90%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Cormorant Garamond', sans-serif;
     background-color: var(--unicornIvory);
     color: var(--dementorBlack);
-    margin: 2rem auto 2rem auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
 }
 
 h2 {
@@ -49,20 +61,27 @@ hr {
     opacity: 40%;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*------ Navigation ------*/
 
-.navbar-logo {
-    margin-top: .5rem;
+.navbar__logo {
+    margin-top: .3rem;
 }
 
 .navbar {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(65, 36, 27, .5);
     background-image: linear-gradient(var(--sortingHatBrown), var(--unicornIvory));
-    border-radius: .3rem;
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .navbar__toggler {
@@ -79,6 +98,12 @@ hr {
     font-size: 1rem;
     color: var(--dementorBlack);
 }
+
+
+.navbar__link-container {
+    display: none;
+}
+
 
 /*------ Header ------*/
 
@@ -133,51 +158,122 @@ ul {
 
 /*------ Footer ------*/
 
-footer {
+.footer {
+    width: 100vw;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color:  rgba(65, 36, 27, .5);
     background-image: linear-gradient(var(--unicornIvory), var(--sortingHatBrown));
-    border-radius: .3rem;
     padding: 2rem;
-    margin-top: 4rem;
 }
 
-/*------ Links ------*/
-
-a[href*="main"] {
-    display: inline-block;
-    color: var(--dementorBlack);
-    text-decoration: none;
-    margin-top: 2rem;
+.footer__links-wrapper {
+    padding-bottom: .3rem;
 }
 
-a[href*="main"]:hover {
-    color: var(--pixieBlue);
-    border-bottom: .1rem solid var(--pixieBlue);
-}
-
-footer a {
+.footer__links {
     color: var(--unicornIvory);
-    text-decoration: none;
 }
 
-footer a:hover {
-    color: var(--flyingFordAngliaBlue);
-    border-bottom: .1rem solid var(--flyingFordAngliaBlue);
+.footer__links:hover {
+    color: var(--dementorBlack);
+    opacity: 70%;
 }
 
-a[href*="pixabay"] {
-    display: block;
+.footer__heading {
+    padding-bottom: 1rem;
 }
 
 /*---------- Media Queries ----------*/
 
+@media screen and (min-width: 650px) {
+
+    .navbar__logo {
+        margin-left: 2rem;
+    }    
+
+    .navbar__toggler {
+        padding-right: 3rem;
+    }
+           
+    /*------ Footer ------*/
+
+    .footer__links-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .footer__links-wrapper {
+        color: var(--dementorBlack);
+        padding-top: 1.5rem;
+    }
+
+    .footer__heading {
+        margin: 1rem 0 0 3rem;
+        padding: 0;
+    } 
+}
+
+@media screen and (min-width: 769px) {
+
+/*------ Navigation ------*/
+
+    .navbar__toggler {
+        display: none;
+    }
+
+    .navbar__link-container {
+        width: 70%;
+        display: block;
+        padding-right: 2.5rem;
+    }
+    
+    .navbar__link-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar__link {
+        list-style-type: none;
+    }
+
+    .navbar__link--item {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--dementorBlack);
+        opacity: 70%;
+    }
+
+    .navbar__link--item:hover {
+        opacity: 100%;
+    }
+
+    .navbar__link--item:active {
+        color: var(--flyingFordAngliaBlue);
+    }
+}
+
 @media screen and (min-width: 992px) {
 
-    /*------ Generic ------*/
+    /*------ Navigation ------*/
 
-    body {
-        width: 85%;
-        margin: 3rem auto 3rem auto;
+    .navbar {
+        height: 5rem;
+    }
+
+    .navbar__link-container {
+        padding-right: 5rem
+    }
+
+    .navbar__link--item {
+        font-size: 1.3rem;
     }
 
     /*------ Image ------*/
@@ -230,16 +326,4 @@ a[href*="pixabay"] {
     .trailer {
         width: 50%;
     }
-    
-    /*------ Links ------*/
-
-    a[href*="pixabay"] {
-        display: inline;
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-
-    a[href*="wikiwand"] {
-        margin-left: 3rem;
-    }    
 }
