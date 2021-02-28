@@ -3,63 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon"  type="image/png" href="images/favicon-logo.png" sizes="60x60" aria-hidden="true">
+    <link rel="icon"  type="image/png" href="assets/images/favicon-logo.png" sizes="60x60" aria-hidden="true">
     <title>Magical Objects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" 
         integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/styles/style.css" type="text/css">
 </head>
-<body>
+<body id="home">
 
     <!-- ***** Navigation ***** -->
     <header>
         <nav class="navbar">
-            <a class="navbar__logo" href="#">
+            <a class="navbar__logo" href="#home">
                 <svg width="77" height="68">
-                    <use xlink:href="images/deathly-hallows-logo.svg#deathly-hallows"></use>
+                    <use xlink:href="assets/images/deathly-hallows-logo.svg#deathly-hallows-logo"></use>
                 </svg>
             </a>
-            <button class="navbar__toggler">
-                <span><i class="fas fa-broom"></i></span>
-                <span><i class="fas fa-broom"></i></span>
-                <span><i class="fas fa-broom"></i></span>
-            </button>
-            <div class="navbar__link-container">
-                <ul class="navbar__link-wrapper">
-                    <li class="navbar__link">
-                        <a class="navbar__link--item" href="#">Introduction</a>
-                    </li>
+            <a class="navbar__toggler" href="#" onclick="broomMagic()">
+                <span><i class="fas fa-broom" aria-hidden="true"></i></span>
+                <span><i class="fas fa-broom" aria-hidden="true"></i></span>
+                <span><i class="fas fa-broom" aria-hidden="true"></i></span>
+            </a>
+            <div class="navbar__link-container" id="navDropdownMenu">
+                <ul class="navbar__link-wrapper animate__animated animate__fadeInRight">
                     <li class="navbar__link">                       
-                        <a class="navbar__link--item" href="#">Detectors</a>
+                        <a class="navbar__link--item" href="#detectors" onclick="linkMagic">Detectors</a>
                     </li>
                     <li class="navbar__link">
-                        <a class="navbar__link--item" href="#">Concealers</a>
+                        <a class="navbar__link--item" href="#concealers">Concealers</a>
                     </li>
                     <li class="navbar__link">
-                        <a class="navbar__link--item" href="#">Transportation</a>
+                        <a class="navbar__link--item" href="#transportation">Transportation</a>
                     </li>
                     <li class="navbar__link">
-                        <a class="navbar__link--item" href="#">Deathly Hallows</a>
+                        <a class="navbar__link--item" href="#deathly-hallows">Deathly Hallows</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <!-- ***** /.Navigation ***** -->
+
     <div class="container">
+
         <!-- ***** Heading ***** -->
-        <section class="header">
+        <section class="heading">
             <h1><em>Harry Potter's</em>
                 <span>Magical Objects</span>
             </h1>
         </section>
-        <hr>
+        <hr class="heading__line" id="line-break">
         <!-- ***** /.Heading ***** -->
 
         <!-- ***** Image ***** -->
         <section>
             <figure>
-                <img src="images/hogwarts.jpg" alt=" Image of Hogwarts School of Wizardry and Wichcraft with a flying dragon.">
+                <img src="assets/images/hogwarts.jpg" alt=" Image of Hogwarts School of Wizardry and Wichcraft with a flying dragon.">
                 <figcaption>Fig.1 - Hogwarts School of Witchcraft and Wizardry.</figcaption>
             </figure>
         </section>
@@ -92,7 +92,7 @@
 
         <!-- ***** Author Info ***** -->
         <section class="group">
-            <aside>
+            <aside id="detectors">
                 <h2>J. K. Rowling</h2>
                 <p>
                     Joanne Rowling ( ROH-ling; born 31 July 1965), better known by her pen name J. K. Rowling, 
@@ -106,9 +106,9 @@
         <!-- ***** Trailer ***** -->
             <figure>
                 <figcaption class="trailer-text">Harry Potter and The Philosopher's Stone Trailer</figcaption>
-                <video  class="trailer" controls poster="images/trailer-image.png">
-                    <source src="videos/harry-potter-trailer.mp4" type="video/mp4">
-                    <source src="videos/harry-potter-trailer.ogv" type="video/ogv">
+                <video  class="trailer" controls poster="assets/images/trailer-image.png">
+                    <source src="assets/videos/harry-potter-trailer.mp4" type="video/mp4">
+                    <source src="assets/videos/harry-potter-trailer.ogv" type="video/ogv">
                     <p>
                         Your browser doesn't support HTML5 video. Here is a 
                         <a href="https://archive.org/details/HarryPotterTheSorcerersStoneTrailer1" target="_blank">
@@ -120,7 +120,7 @@
         <!-- ***** /.Trailer ***** -->
 
         <!-- ***** Main Content ***** -->
-        <main id="main-content">
+        <main>
             <article>
                 <header>
                     <h2>Detectors</h2>
@@ -145,7 +145,7 @@
                             as he was actually Barty Crouch Jr in disguise with a Polyjuice Potion.
                         </p><br>
                     </li>
-                    <li>
+                    <li id="concealers">
                         <h3>The Sneakoscope</h3>
                         <p>
                             A Sneakoscope serves as a Dark Arts detector. The device is described as a miniature glass spinning-top 
@@ -174,7 +174,7 @@
                     </li>                
                     <li>
                         <h3>The Invisibility Cloak</h3>
-                        <p>
+                        <p id="transportation">
                             Harry's cloak which he inherited from his father James Potter, is one of the three Deathly Hallows, 
                             making it a true cloak of invisibility, and it will retain its invisibility forever. 
                             It is also resistant to most simple spells and charms (e.g. the summoning charm).
@@ -217,7 +217,7 @@
                             and thus many wizards favour other means of transport for those journeys.
                         </p><br>
                     </li>
-                    <li>
+                    <li id="deathly-hallows">
                         <h3>Floo Powder</h3>
                         <p>
                             Floo Powder is a glittering powder used by wizards to travel and communicate using fireplaces. 
@@ -290,5 +290,6 @@
             </li>
         </ul>    
     </footer>
+    <script src="assets/script/navigation.js"></script>
 </body>
 </html>

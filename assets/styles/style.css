@@ -36,6 +36,8 @@ body {
 
 .container {
     width: 90%;
+    padding-top: 6rem;
+    padding-bottom: 12rem;
 }
 
 h2 {
@@ -55,12 +57,6 @@ p {
     font-size: 1.2rem;
 }
 
-hr {
-    height: 1.2px;
-    background-color: var(--dementorBlack);
-    opacity: 40%;
-}
-
 a {
     text-decoration: none;
 }
@@ -68,11 +64,18 @@ a {
 /*------ Navigation ------*/
 
 .navbar__logo {
-    margin-top: .3rem;
+    margin: 1.3rem 0 0 .3rem;
+    color: var(--dementorBlack);
+    opacity: 70%;
+}
+
+.navbar__logo:hover {
+    opacity: 100%;
 }
 
 .navbar {
     width: 100%;
+    height: 6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,28 +89,65 @@ a {
 
 .navbar__toggler {
     width: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: transparent;
-    margin-right: .5rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+
+
 }
 
 .fa-broom {
     font-size: 1rem;
     color: var(--dementorBlack);
+    opacity: 70%;
 }
 
+/*------ Navigation Dropdown Menu------*/
 
 .navbar__link-container {
     display: none;
 }
 
+.navbar__link-container.menu {
+    display: block;
+}
 
-/*------ Header ------*/
+.navbar__link-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: var(--flyingFordAngliaBlue);
+    border-radius: .5rem;
+    padding-right: 1rem;
+    position: absolute;
+    top: 6rem;
+    right: 0;
+}
 
-.header {
+.navbar__link {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.navbar__link--item {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--dementorBlack);
+    opacity: 70%;
+}
+
+.navbar__link--item:hover {
+    opacity: 100%;
+}
+
+.navbar__link--item:active {
+    color: var(--flyingFordAngliaBlue);
+}
+
+/*------ Heading ------*/
+
+.heading {
     font-weight: 600;
     max-width: 19rem;
     margin: auto;
@@ -117,10 +157,20 @@ a {
     padding-bottom: 1rem;
 }
 
-.header span {
+.heading span {
     display: block;
     text-align: center;
     font-size: 2rem;
+}
+
+.heading__line {
+    height: 1.2px;
+    background-color: var(--dementorBlack);
+    opacity: 40%;
+}
+
+.heading__line.hide {
+    opacity: 0;
 }
 
 /*------ Image ------*/
@@ -192,7 +242,7 @@ ul {
 /*---------- Media Queries ----------*/
 
 @media screen and (min-width: 650px) {
-
+    
     .navbar__logo {
         margin-left: 2rem;
     }    
@@ -228,52 +278,37 @@ ul {
     .navbar__toggler {
         display: none;
     }
-
+    
     .navbar__link-container {
         width: 70%;
         display: block;
         padding-right: 2.5rem;
     }
-    
+
     .navbar__link-wrapper {
         display: flex;
+        position: static;
+        background-color: transparent;
+        flex-direction: row;
         justify-content: space-between;
     }
 
     .navbar__link {
-        list-style-type: none;
-    }
-
-    .navbar__link--item {
-        font-size: 1rem;
-        font-weight: 700;
-        color: var(--dementorBlack);
-        opacity: 70%;
-    }
-
-    .navbar__link--item:hover {
-        opacity: 100%;
-    }
-
-    .navbar__link--item:active {
-        color: var(--flyingFordAngliaBlue);
+        padding: 0;
     }
 }
 
 @media screen and (min-width: 992px) {
 
-    /*------ Navigation ------*/
-
-    .navbar {
-        height: 5rem;
+    .container {
+        padding-top: 8rem;
+        padding-bottom: 15rem;
     }
+
+    /*------ Navigation ------*/
 
     .navbar__link-container {
         padding-right: 5rem
-    }
-
-    .navbar__link--item {
-        font-size: 1.3rem;
     }
 
     /*------ Image ------*/
@@ -304,7 +339,7 @@ ul {
         margin-top: 5.5rem;
     }
     
-        /*-- Clearfix for Aside Float Element --*/
+    /*-- Clearfix for Aside Float Element --*/
 
     .group:before,
     .group:after {
