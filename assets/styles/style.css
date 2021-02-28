@@ -44,11 +44,6 @@ h2 {
     padding: 3rem 0 1rem 0;
 }
 
-h2 > p {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
 h3, h4 {
     padding-bottom: 0.5rem;
 }
@@ -171,6 +166,12 @@ a {
 
 .heading__line.hide {
     opacity: 0;
+}
+
+.sub-heading {
+    font-size: 1.2rem;
+    padding: .5rem 0 1rem 0;
+    font-weight: 700;
 }
 
 /*------ Image ------*/
@@ -317,15 +318,15 @@ ul {
         margin-top: 2rem;
     }
 
-    /*------ Header ------*/
+    /*------ Heading ------*/
 
-    .header {
+    .heading {
         max-width: 38rem;
         font-size: 1rem;
 
     }
 
-    .header span {
+    .heading span {
         font-size: 4rem;
     }
 
