@@ -138,10 +138,6 @@ a {
     opacity: 100%;
 }
 
-.navbar__link--item:active {
-    color: var(--flyingFordAngliaBlue);
-}
-
 /*------ Heading ------*/
 
 .heading {
