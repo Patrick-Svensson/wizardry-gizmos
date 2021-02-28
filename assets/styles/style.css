@@ -283,9 +283,8 @@ ul {
     }
     
     .navbar__link-container {
-        width: 70%;
+        width: 75%;
         display: block;
-        padding-right: 2.5rem;
     }
 
     .navbar__link-wrapper {
@@ -304,8 +303,8 @@ ul {
 @media screen and (min-width: 992px) {
 
     .container {
-        padding-top: 8rem;
-        padding-bottom: 15rem;
+        padding-top: 8rem;          /* Not desireble */
+        padding-bottom: 15rem;      /* Not desireble */
     }
 
     /*------ Image ------*/
