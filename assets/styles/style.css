@@ -19,6 +19,7 @@
     --pixieBlue: rgb(22, 103, 134);
     --flyingFordAngliaBlue: rgb(183, 241, 241);
     --sortingHatBrown: rgb(65, 36, 27);
+    
 }
 
 body {
@@ -32,6 +33,7 @@ body {
     color: var(--dementorBlack);
     position: relative;
     box-sizing: border-box;
+    outline: 1px solid red;
 }
 
 .container {
@@ -210,7 +212,7 @@ ul {
 /*------ Footer ------*/
 
 .footer {
-    width: 100vw;
+    width: 100%;
     height: 10rem;
     display: flex;
     flex-direction: column;
@@ -291,7 +293,7 @@ ul {
         position: static;
         background-color: transparent;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .navbar__link {
@@ -304,12 +306,6 @@ ul {
     .container {
         padding-top: 8rem;
         padding-bottom: 15rem;
-    }
-
-    /*------ Navigation ------*/
-
-    .navbar__link-container {
-        padding-right: 5rem
     }
 
     /*------ Image ------*/
