@@ -1,15 +1,9 @@
 function broomMagic() {
     let  alohomora= document.getElementById("navDropdownMenu");
-    if (alohomora.className === "navbar__link-container") {
-        alohomora.className += "menu";
-    } else {
-        alohomora.className = "navbar__link-container";
-    }
+    alohomora.classList.add("menu");
 }
 
-    // let  obliviate= document.getElementById("line-break");
-    // if (obliviate.className === "heading__line") {
-    //     obliviate.className += "hide";
-    // } else {
-    //     obliviate.className = "heading__line";
-    // }
+function obliviateMenu() {
+    let  obliviate= document.getElementById("navDropdownMenu");
+    obliviate.classList.remove("menu");
+}

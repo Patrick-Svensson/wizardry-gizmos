@@ -18,8 +18,7 @@
     --dementorBlack: rgb(12, 10, 4);
     --pixieBlue: rgb(22, 103, 134);
     --flyingFordAngliaBlue: rgb(183, 241, 241);
-    --sortingHatBrown: rgb(65, 36, 27);
-    
+    --sortingHatBrown: rgb(65, 36, 27);    
 }
 
 body {
@@ -33,7 +32,6 @@ body {
     color: var(--dementorBlack);
     position: relative;
     box-sizing: border-box;
-    outline: 1px solid red;
 }
 
 .page-container {
@@ -110,18 +108,18 @@ a {
 /*------ Navigation Dropdown Menu------*/
 
 .navbar__link-container {
-    display: none;
+    visibility: hidden;
 }
 
 .navbar__link-container.menu {
-    display: block;
+    visibility: visible;
 }
 
 .navbar__link-wrapper {
     display: flex;
     flex-direction: column;
     text-align: left;
-    background-color: var(--flyingFordAngliaBlue);
+    background-color: rgb(109, 81, 73);
     border-radius: .5rem;
     padding-right: 1rem;
     position: absolute;
@@ -137,7 +135,7 @@ a {
 .navbar__link--item {
     font-size: 1.3rem;
     font-weight: 700;
-    color: var(--dementorBlack);
+    color: var(--unicornIvory);
     opacity: 70%;
 }
 
@@ -293,6 +291,10 @@ ul {
         padding: 0;
     }
     
+    .navbar__link--item {
+        color: var(--dementorBlack);
+    }
+
     .navbar__link--obliviate {
         display: none;
     }
