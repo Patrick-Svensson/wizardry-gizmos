@@ -292,6 +292,10 @@ ul {
     .navbar__link {
         padding: 0;
     }
+    
+    .navbar__link--obliviate {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 992px) {
