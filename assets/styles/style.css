@@ -36,10 +36,17 @@ body {
     outline: 1px solid red;
 }
 
-.container {
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-container--small {
     width: 90%;
     padding-top: 6rem;
-    padding-bottom: 12rem;
+    padding-bottom: 2rem;
 }
 
 h2 {
@@ -158,12 +165,7 @@ a {
 
 .heading__line {
     height: 1.2px;
-    background-color: var(--dementorBlack);
-    opacity: 40%;
-}
-
-.heading__line.hide {
-    opacity: 0;
+    background-color: rgb(196, 177, 177);
 }
 
 .sub-heading {
@@ -212,10 +214,6 @@ ul {
     height: 10rem;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     background-color:  rgba(65, 36, 27, .5);
     background-image: linear-gradient(var(--unicornIvory), var(--sortingHatBrown));
     padding: 2rem;
@@ -297,11 +295,6 @@ ul {
 }
 
 @media screen and (min-width: 992px) {
-
-    .container {
-        padding-top: 8rem;          /* Not desireble */
-        padding-bottom: 15rem;      /* Not desireble */
-    }
 
     /*------ Image ------*/
 

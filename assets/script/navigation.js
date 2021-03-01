@@ -5,10 +5,11 @@ function broomMagic() {
     } else {
         alohomora.className = "navbar__link-container";
     }
-    let  obliviate= document.getElementById("line-break");
-    if (obliviate.className === "heading__line") {
-        obliviate.className += "hide";
-    } else {
-        obliviate.className = "heading__line";
-    }
 }
+
+    // let  obliviate= document.getElementById("line-break");
+    // if (obliviate.className === "heading__line") {
+    //     obliviate.className += "hide";
+    // } else {
+    //     obliviate.className = "heading__line";
+    // }
