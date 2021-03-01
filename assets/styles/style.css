@@ -108,11 +108,11 @@ a {
 /*------ Navigation Dropdown Menu------*/
 
 .navbar__link-container {
-    visibility: hidden;
+    display: none;
 }
 
 .navbar__link-container.menu {
-    visibility: visible;
+    display: block;
 }
 
 .navbar__link-wrapper {
