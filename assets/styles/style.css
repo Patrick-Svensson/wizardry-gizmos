@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 /*------ Wild Card ------*/
 
 *,
 *::before,
 *::after {
-    margin:0;
-    padding:0;
-    border:0;
+    margin: 0;
+    padding: 0;
+    border: 0;
     box-sizing: inherit;
 }
 
@@ -18,7 +18,7 @@
     --dementorBlack: rgb(12, 10, 4);
     --pixieBlue: rgb(22, 103, 134);
     --flyingFordAngliaBlue: rgb(183, 241, 241);
-    --sortingHatBrown: rgb(65, 36, 27);    
+    --sortingHatBrown: rgb(65, 36, 27);
 }
 
 body {
@@ -27,7 +27,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Cormorant Garamond', sans-serif;
+    font-family: "Cormorant Garamond", sans-serif;
     background-color: var(--unicornIvory);
     color: var(--dementorBlack);
     position: relative;
@@ -51,7 +51,8 @@ h2 {
     padding: 3rem 0 1rem 0;
 }
 
-h3, h4 {
+h3,
+h4 {
     padding-bottom: 0.5rem;
 }
 
@@ -66,13 +67,11 @@ a {
 /*------ Navigation ------*/
 
 .navbar__logo {
-    margin: 1.3rem 0 0 .3rem;
-    color: var(--dementorBlack);
-    opacity: 70%;
+    margin: 1.3rem 0 0 0.3rem;
 }
 
 .navbar__logo:hover {
-    opacity: 100%;
+    filter: invert(98%) sepia(32%) saturate(850%) hue-rotate(300deg) brightness(112%) contrast(101%);
 }
 
 .navbar {
@@ -81,7 +80,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(65, 36, 27, .5);
+    background-color: rgba(65, 36, 27, 0.5);
     background-image: linear-gradient(var(--sortingHatBrown), var(--unicornIvory));
     position: fixed;
     top: 0;
@@ -95,14 +94,11 @@ a {
     position: absolute;
     top: 1.5rem;
     right: 1rem;
-
-
 }
 
 .fa-broom {
     font-size: 1rem;
     color: var(--dementorBlack);
-    opacity: 70%;
 }
 
 /*------ Navigation Dropdown Menu------*/
@@ -120,7 +116,7 @@ a {
     flex-direction: column;
     text-align: left;
     background-color: rgb(109, 81, 73);
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     padding-right: 1rem;
     position: absolute;
     top: 6rem;
@@ -136,11 +132,10 @@ a {
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--unicornIvory);
-    opacity: 70%;
 }
 
 .navbar__link--item:hover {
-    opacity: 100%;
+    color: var(--unicornIvory);
 }
 
 /*------ Heading ------*/
@@ -150,7 +145,7 @@ a {
     max-width: 19rem;
     margin: auto;
     padding-top: 1rem;
-    font-size: .6rem;
+    font-size: 0.6rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -168,7 +163,7 @@ a {
 
 .sub-heading {
     font-size: 1.2rem;
-    padding: .5rem 0 1rem 0;
+    padding: 0.5rem 0 1rem 0;
     font-weight: 700;
 }
 
@@ -212,13 +207,13 @@ ul {
     height: 10rem;
     display: flex;
     flex-direction: column;
-    background-color:  rgba(65, 36, 27, .5);
+    background-color: rgba(65, 36, 27, 0.5);
     background-image: linear-gradient(var(--unicornIvory), var(--sortingHatBrown));
     padding: 2rem;
 }
 
 .footer__links-wrapper {
-    padding-bottom: .3rem;
+    padding-bottom: 0.3rem;
 }
 
 .footer__links {
@@ -237,15 +232,14 @@ ul {
 /*---------- Media Queries ----------*/
 
 @media screen and (min-width: 650px) {
-    
     .navbar__logo {
         margin-left: 2rem;
-    }    
+    }
 
     .navbar__toggler {
         padding-right: 3rem;
     }
-           
+
     /*------ Footer ------*/
 
     .footer__links-container {
@@ -263,17 +257,16 @@ ul {
     .footer__heading {
         margin: 1rem 0 0 3rem;
         padding: 0;
-    } 
+    }
 }
 
 @media screen and (min-width: 769px) {
-
-/*------ Navigation ------*/
+    /*------ Navigation ------*/
 
     .navbar__toggler {
         display: none;
     }
-    
+
     .navbar__link-container {
         width: 75%;
         display: block;
@@ -290,7 +283,7 @@ ul {
     .navbar__link {
         padding: 0;
     }
-    
+
     .navbar__link--item {
         color: var(--dementorBlack);
     }
@@ -301,7 +294,6 @@ ul {
 }
 
 @media screen and (min-width: 992px) {
-
     /*------ Image ------*/
 
     img {
@@ -313,7 +305,6 @@ ul {
     .heading {
         max-width: 38rem;
         font-size: 1rem;
-
     }
 
     .heading span {
@@ -325,11 +316,11 @@ ul {
     aside {
         float: right;
         width: 30%;
-        border: .1rem solid var(--dementorBlack);
+        border: 0.1rem solid var(--dementorBlack);
         padding: 0 2rem 3rem 2rem;
         margin-top: 5.5rem;
     }
-    
+
     /*-- Clearfix for Aside Float Element --*/
 
     .group:before,

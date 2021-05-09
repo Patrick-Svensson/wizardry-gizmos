@@ -1,9 +1,9 @@
 function broomMagic() {
-    let  alohomora= document.getElementById("navDropdownMenu");
+    let alohomora = document.querySelector("#navDropdownMenu");
     alohomora.classList.add("menu");
 }
 
 function obliviateMenu() {
-    let  obliviate= document.getElementById("navDropdownMenu");
+    let obliviate = document.querySelector("#navDropdownMenu");
     obliviate.classList.remove("menu");
 }
